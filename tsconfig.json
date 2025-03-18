@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.options.json",
+    "files": [],
+    "exclude": [
+        "**/coverage/**"
+    ],
+    "references": [
+        {
+            "path": "node-apps/apollo"
+        },
+        {
+            "path": "packages/add-sub"
+        },
+        {
+            "path": "packages/mult-div"
+        }
+    ]
+}
