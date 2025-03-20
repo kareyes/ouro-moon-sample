@@ -1,0 +1,23 @@
+{
+	"extends": "../../tsconfig.json",
+	"include": [
+		"src/**/*",
+		"../../packages/pets-db/src/**/*"
+	],
+	"compilerOptions": {
+		"outDir": "../../.moon/cache/types/node-apps/artemis",
+		"paths": {
+			"@ouro/pets-db": [
+				"../../packages/pets-db/src/index.ts"
+			],
+			"@ouro/pets-db/*": [
+				"../../packages/pets-db/src/*"
+			]
+		}
+	},
+	"references": [
+		{
+			"path": "../../packages/pets-db"
+		}
+	]
+}
