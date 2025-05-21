@@ -3,6 +3,7 @@ import { type Pet, PetsDB, PetsDBImplementation } from "@ouro/pets-db";
 
 const printPet = (pet: Pet) => {
 	console.log(pet);
+	console.log("Pet name:", pet.name);
 };
 
 const petProgram = pipe(
